@@ -79,7 +79,21 @@ function Rectangle(){
 // this refers to the current object
 
 // object creation using constructor function
-let rectangleObject = new Rectangle();
+let rectangleObject = new Rectangle(4,6);
 // new ek empty object create krta hai js me
 
+
+
+
+// DYNAMIC NATURE OF OBJECTS -->ISME YEH REHTA KE MAI CHAU TO KOI PROPERTY ADD KRU MAI CHAHU TO KOI PROPERTY DELETE THIS IS CALLED DYNAMIC NATUTE OD=F OBJECTS 
  
+// lets add colour in rectangleObject
+
+rectangleObject.color ='yellow';
+console.log(rectangleObject);
+
+// lets delete this added colour property
+delete rectangleObject.color;
+console.log(rectangleObject);
+
+// constructor property--> yeh property hume btati hai ke koi object bana kaise
