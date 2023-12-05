@@ -69,13 +69,13 @@ let reactangle2 = createRectangle(2,1);
 // second method to make objects is
 // 2->constructor function -> this uses pascal notation ->first letter of every word is capital -> NumberOfStudents
 // constructor function-> properties/methods-> initialize/Define  isme return nhi krna padta
-function Rectangle(){
-    this.length =len;
-    this.breadth =bre;
-    this.draw= function(){
-        console.log('drawing');
-    }
-}
+// function Rectangle(){
+//     this.length =len;
+//     this.breadth =bre;
+//     this.draw= function(){
+//         console.log('drawing');
+//     }
+// }
 // this refers to the current object
 
 // object creation using constructor function
@@ -97,3 +97,83 @@ delete rectangleObject.color;
 console.log(rectangleObject);
 
 // constructor property--> yeh property hume btati hai ke koi object bana kaise
+// jaise hume check krna hai ke rectangleObject kaise bna hai to to hum console me rectangleObject.constructor likh denge aur vo jaha se construct hua  vo ajayega
+// functions are objects in js as kisi entity ke agar property ho aur uske methods bhi ho to vo ke obejct hai
+// TYPES IN JS
+// 1->PRIMITIVE OR VALUED TYPES-->LIKE NUMBERS ,STRING,BOOLEAN,UNDEFINED,NULL,symbol
+//2-->REFRENCE TYPE OR OBJECTS --> LIKE FUNCTIONS  OBEJCTS AND ARRAYS
+
+// PRIMITIVE TYPE ME HAMESHA COPY BANTI HAI 
+// REFRENCE TYPE ME HAMESHA SAME ADDRESS PE POINT KRTE HAI
+
+//  NOTE-> PRIMITIVE ARE COPIED BY THEIR VALUE AND REFERNCE ARE COPIED BY THIER ADDRESS/REFRENCE
+
+// let a=10;
+// function inc(a){
+//     a++
+// }
+// inc(a);
+// console.log(a);
+
+
+
+// let a = {value:10};
+
+// function inc(a){
+//     a.value++;
+// }
+// inc(a);
+// console.log(a.value); 
+
+// Iterating through objects
+// 1-> for in
+// 2=>for of
+
+
+let rectangle1 ={
+    length: 2,
+    breadth :3
+};
+
+// for in loop 
+for( let key in rectangle1){
+    // keys are jo hume uske andar property bannate hai like length and breath 
+    // keys are reflected through key variable 
+    // values are refleected through rectangle[key]
+   console.log(key,rectangle1[key]);
+}
+
+// for of loop-> yeh sirrf iterables pe lag sakte hai like arrays ,maps
+for( let key in rectangle1){
+console.log(key,rectangle1[key]);
+}
+// abhi console me dikkhayega ke object is not iterable to pehle hum is obejct to array banayenge phit yeh iterate hoga
+for( let key in Object.keys(rectangle1)){
+    console.log(key);
+    }
+    // abhi console me saari keys ajayengi lekin uski value ko bhi dikhane ke liye hume enteries use krni hogi
+    for( let key in Object.entries(rectangle1)){
+        console.log(key);
+        }
+    
+
+//  TO CHECK KE KOI KEY/PROPERTY PRESENT HAI KE NHI THEN WE D0 
+
+ if ('length' in rectangle1){
+    console.log('present');
+ }
+ else{
+    console.log('absent');
+ }
+//  length to hai upar rectangle naam ke object me to present dikha dega 
+if ('color' in rectangle1){
+    console.log('present');
+ }
+ else{
+    console.log('absent');
+ }
+//  color to hai nhi upar rectangle naam ke obejct  to absent dikha dega
+
+// OBJECT CLONING--> mtlb same cheez maine bana rakhi mujhe phir se banaane hai 
+
+         
