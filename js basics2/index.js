@@ -175,5 +175,48 @@ if ('color' in rectangle1){
 //  color to hai nhi upar rectangle naam ke obejct  to absent dikha dega
 
 // OBJECT CLONING--> mtlb same cheez maine bana rakhi mujhe phir se banaane hai 
+// object cloning can be doen by three methods
+// 1->iterration
+// 2->assign
+// 3-> spread
+
+// by iterration
+
+let src = {value:10};
+let destination={};
+for(let key in src){
+    destination[key]=src[key];
+    }
+    console.log(destination);
+// upar vale code me humne src ki value destination me clonekra de de stination to phele empty liya use baad iterrate krake uski src ki value destination me daal di
+
+// by asssign
+let src1 = {
+    a:10,
+    b:13
+    c:3
+}
+let src2 = { value: 25}
+
+let destina = object.assign({},src);
+// isme aapne obejct.assign naam ka ek functionn bana liya  aur empty leke aur src ko copy kra diya empty me aur empty ko equual kra diya destina me
+
+// by spread
+let src3={
+    a:1,
+    b:2,
+    c=30
+
+};
+let destin = {...src};
+console.log(destin);
+src.a++;
+console.log(destin);
+
+// grabage  collecction
+//  aise variable ya constant ko find krta hai jo use me nhi hai
+// we have no control over G.C when to start /stop
+//  runs in background
+
 
          
