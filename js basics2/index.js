@@ -193,7 +193,7 @@ for(let key in src){
 // by asssign
 let src1 = {
     a:10,
-    b:13
+    b:13,
     c:3
 }
 let src2 = { value: 25}
@@ -205,8 +205,7 @@ let destina = object.assign({},src);
 let src3={
     a:1,
     b:2,
-    c=30
-
+    c:30
 };
 let destin = {...src};
 console.log(destin);
