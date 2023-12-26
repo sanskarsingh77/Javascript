@@ -1,5 +1,5 @@
 // inbuilt ,objects and arrays //
-// 1->math --> youb check math ke saare property attributes from mdn
+// 1->math --> you can  check math ke saare property attributes from mdn 
 
 
 
@@ -12,7 +12,7 @@ let lastName ='boss';
 let firstName = new String('bossman');
 // console me typeoflastsname krenge to string ayega aur agar typeoffirstname krenge to obejct ayega kyo hummne first name ko obejct banaya hai
 
-// let lastName ='boss'; is prmeitive string ko obejct banane ke liye   
+// let lastName ='boss'; is prmeitive string ko obejct banane ke liye dot(.) use krte hi js usko  object ki tarah read krne lagega  
 // string ki kuch properties  
 // lastName.toUpperCase
 // lastName.tolowercase
@@ -34,7 +34,7 @@ student ${lastName}`;
 //  yeh ${lastname } ek place holder hai yeh isme lastname jo value hogi vo a jayegi iss para me  
 
 
-console.log(messgaes);
+console.log(messages);
 
 
 //  DATE AND TIME
@@ -45,9 +45,12 @@ let date2 = new Date('june 20 1998 07:15');
 console.log(date2);
 
 let date3 = new Date('1998, 11 , 20 , 7');
+// (year,month,date,hour) aur haa month ki indexing 0 se hue hai to 11 ka mtlb december hota hai
 console.log(date3);
   
 date3.setFullYear(1947);
+
+
 // date and time me getter setter bhi rehte hai agar kuch  fetch krne ho to getter agar set krna date ya time to setter
 
 
@@ -138,7 +141,7 @@ console.log(combined);
 
 let marks =[10,20,30,40,50,60];
 let sliced = marks.slice(2,6);
-console.log(sliced0);
+console.log(sliced);
 
 // slice ke andar 2,6 ka mtlb hai 2 index se slicing starthogi lekin 5 index ke ek pehle tak slice hoga 
 
