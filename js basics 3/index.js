@@ -90,7 +90,7 @@ date3.setFullYear(1947);
 //     {no:1, naam:'sanskar'},
 //     {no:2, naam:'singh'}
 // };
-
+// agar objects ke s tah kaam kr rhe to indexof ya inncludes se tm search nhi kr sakte ke element hai  ke nhi tmhe call back function use krna hoga  
 //  let course = courses.find(function(course){
 //     return course.naam == 'sanskar';
 //  })
@@ -132,19 +132,32 @@ let numbers =[1,5,8,9];
 
 // combining & slicing an array
 // combining
-let first =[1,8,9,87,6];
-let second = [3,8,6];
+// let first =[1,8,9,87,6];
+// let second = [3,8,6];
 
-let combined = first.concat(second);
-console.log(combined);
+// let combined = first.concat(second);
+// console.log(combined);
 // slicing is kuch part ko nikalna array me se
 
-let marks =[10,20,30,40,50,60];
-let sliced = marks.slice(2,6);
-console.log(sliced);
+// let marks =[10,20,30,40,50,60];
+// let sliced = marks.slice(2,6);
+// console.log(sliced);
 
 // slice ke andar 2,6 ka mtlb hai 2 index se slicing starthogi lekin 5 index ke ek pehle tak slice hoga 
 
 
-// spread operator
+// spread operator(...)
+let first = [1,2,3];
+let second = [4,5,6];
+
+let combined = [...first,...second];
+console.log(combined);
+// spread operator ko concat ki tarh bhi use kr sakete hai
+// copy kaise create kru
+let another = [...combined];
+
+// iterating an array
+// iterable ke upar ek loop lagta hai vo hao for of
+
+
 
