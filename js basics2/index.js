@@ -46,7 +46,7 @@ function createRectangle(){
 
 
 function createRectangle(len, bre){
-    let rectangle ={
+    let rectangle ={ 
         length: len,
         breadth: bre,
         draw: function(){
@@ -59,7 +59,7 @@ function createRectangle(len, bre){
     }
     return rectangle;
 }
-let recatngleObj1= createRectangle(5,4);
+let recatngleObj1= createRectangle(5,4); 
 // upar vali line se humne ek rectangleObj1 naam ke variable me upar vale functionko daal diya aur parenthesis me parameters daal diya rectangle ke 
 
 //  ab mujhe agar same obj banaane honnge to  mai ek variable bane ke usko parmaeters de ke ban dunga factoryv functions ke help se like
@@ -77,7 +77,7 @@ let reactangle2 = createRectangle(2,1);
 //     }
 // }
 // this refers to the current object
-
+ 
 // object creation using constructor function
 let rectangleObject = new Rectangle(4,6);
 // new ek empty object create krta hai js me
@@ -85,7 +85,7 @@ let rectangleObject = new Rectangle(4,6);
 
 
 
-// DYNAMIC NATURE OF OBJECTS -->ISME YEH REHTA KE MAI CHAU TO KOI PROPERTY ADD KRU MAI CHAHU TO KOI PROPERTY DELETE THIS IS CALLED DYNAMIC NATUTE OD=F OBJECTS 
+// DYNAMIC NATURE OF OBJECTS -->ISME YEH REHTA KE MAI CHAU TO KOI PROPERTY ADD KRU MAI CHAHU TO KOI PROPERTY DELETE THIS IS CALLED DYNAMIC NATUTE OF OBJECTS 
  
 // lets add colour in rectangleObject
 
